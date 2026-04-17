@@ -19,7 +19,7 @@ Short guide to verify channel connectivity without guessing.
 - `openclaw health --verbose` — forces a live health probe and prints gateway connection details.
 - `openclaw health --json` — machine-readable health snapshot output.
 - Send `/status` as a standalone message in WhatsApp/WebChat to get a status reply without invoking the agent.
-- Logs: tail `/tmp/openclaw/openclaw-*.log` and filter for `web-heartbeat`, `web-reconnect`, `web-auto-reply`, `web-inbound`.
+- Logs: tail `/tmp/tunacosgun/openclaw-*.log` and filter for `web-heartbeat`, `web-reconnect`, `web-auto-reply`, `web-inbound`.
 
 ## Deep diagnostics
 

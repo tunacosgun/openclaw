@@ -240,7 +240,7 @@ Notes:
 If no `metadata.openclaw` is present, the skill is always eligible (unless
 disabled in config or blocked by `skills.allowBundled` for bundled skills).
 
-## Config overrides (`~/.openclaw/openclaw.json`)
+## Config overrides (`~/.tunacosgun/openclaw.json`)
 
 Bundled/managed skills can be toggled and supplied with env values:
 

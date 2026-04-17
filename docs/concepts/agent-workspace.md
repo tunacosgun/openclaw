@@ -26,7 +26,7 @@ inside a sandbox workspace under `~/.openclaw/sandboxes`, not your host workspac
 - Default: `~/.openclaw/workspace`
 - If `OPENCLAW_PROFILE` is set and not `"default"`, the default becomes
   `~/.openclaw/workspace-<profile>`.
-- Override in `~/.openclaw/openclaw.json`:
+- Override in `~/.tunacosgun/openclaw.json`:
 
 ```json5
 {
@@ -129,7 +129,7 @@ files.
 
 These live under `~/.openclaw/` and should NOT be committed to the workspace repo:
 
-- `~/.openclaw/openclaw.json` (config)
+- `~/.tunacosgun/openclaw.json` (config)
 - `~/.openclaw/agents/<agentId>/agent/auth-profiles.json` (model auth profiles: OAuth + API keys)
 - `~/.openclaw/credentials/` (channel/provider state plus legacy OAuth import data)
 - `~/.openclaw/agents/<agentId>/sessions/` (session transcripts + metadata)
@@ -226,7 +226,7 @@ Suggested `.gitignore` starter:
 ## Moving the workspace to a new machine
 
 1. Clone the repo to the desired path (default `~/.openclaw/workspace`).
-2. Set `agents.defaults.workspace` to that path in `~/.openclaw/openclaw.json`.
+2. Set `agents.defaults.workspace` to that path in `~/.tunacosgun/openclaw.json`.
 3. Run `openclaw setup --workspace <path>` to seed any missing files.
 4. If you need sessions, copy `~/.openclaw/agents/<agentId>/sessions/` from the
    old machine separately.

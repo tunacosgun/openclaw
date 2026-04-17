@@ -13,7 +13,7 @@ OpenClaw runs a single embedded agent runtime.
 
 OpenClaw uses a single agent workspace directory (`agents.defaults.workspace`) as the agent’s **only** working directory (`cwd`) for tools and context.
 
-Recommended: use `openclaw setup` to create `~/.openclaw/openclaw.json` if missing and initialize the workspace files.
+Recommended: use `openclaw setup` to create `~/.tunacosgun/openclaw.json` if missing and initialize the workspace files.
 
 Full workspace layout + backup guide: [Agent workspace](/concepts/agent-workspace)
 

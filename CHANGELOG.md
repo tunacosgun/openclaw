@@ -905,7 +905,7 @@ Docs: https://docs.openclaw.ai
 - Matrix: pass configured `deviceId` through health probes and keep probe-only client setup out of durable Matrix storage, so health checks preserve the correct device identity without rewriting `storage-meta.json` or related probe state on disk. (#61581) Thanks @MoerAI.
 - Image generation/build: write stable runtime alias files into `dist/` and route provider-auth runtime lookups through those aliases so image-generation providers keep resolving auth/runtime modules after rebuilds instead of crashing on missing hashed chunk files.
 - Config/runtime: pin the first successful config load in memory for the running process and refresh that snapshot on successful writes/reloads, so hot paths stop reparsing `openclaw.json` between watcher-driven swaps.
-- Config/legacy cleanup: stop probing obsolete alternate legacy config names and service labels during local config/service detection, while keeping the active `~/.openclaw/openclaw.json` path canonical.
+- Config/legacy cleanup: stop probing obsolete alternate legacy config names and service labels during local config/service detection, while keeping the active `~/.tunacosgun/openclaw.json` path canonical.
 - ACP/sessions_spawn: register ACP child runs for completion tracking and lifecycle cleanup, and make registration-failure cleanup explicitly best-effort so callers do not assume an already-started ACP turn was fully aborted. (#40885) Thanks @xaeon2026 and @vincentkoc.
 - ACP/tasks: mark cleanly exited ACP runs as blocked when they end on deterministic write or authorization blockers, and wake the parent session with a follow-up instead of falsely reporting success.
 - ACPX/runtime: derive the bundled ACPX expected version from the extension package metadata instead of hardcoding a separate literal, so plugin-local ACPX installs stop drifting out of health-check parity after version bumps. (#49089) Thanks @jiejiesks and @vincentkoc.
@@ -1270,7 +1270,7 @@ Docs: https://docs.openclaw.ai
 - Browser/plugins: auto-enable the bundled browser plugin when browser config or browser tool policy already references it, and show a clearer CLI error when `plugins.allow` excludes `browser`.
 - CI/dev checks: default local `pnpm check` to a lower-memory typecheck/lint path while keeping CI on the normal parallel path, and harden Telegram test typing/literals around native TypeScript-Go tooling crashes.
 - Tasks: add a small task-flow runtime substrate for authoring layers with persisted wait targets and output bags, plus bundled skills/Lobster examples and richer `flows show` / `doctor` recovery hints for multi-task flow state. (#58336) Thanks @mbelinky and @vincentkoc.
-- Config/legacy cleanup: stop probing obsolete alternate legacy config names and service labels during local config/service detection, while keeping the active `~/.openclaw/openclaw.json` path canonical.
+- Config/legacy cleanup: stop probing obsolete alternate legacy config names and service labels during local config/service detection, while keeping the active `~/.tunacosgun/openclaw.json` path canonical.
 - Config/runtime: pin the first successful config load in memory for the running process and refresh that snapshot on successful writes/reloads, so hot paths stop reparsing `openclaw.json` between watcher-driven swaps.
 - LINE/status: stop `openclaw status` from warning about missing credentials when sanitized LINE snapshots are already configured, while still surfacing whether the missing field is the token or secret. (#45701) Thanks @tamaosamu.
 - macOS/local gateway: stop OpenClaw.app from killing healthy local gateway listeners after startup by recognizing the current `openclaw-gateway` process title and using the current `openclaw gateway` launch shape.
@@ -5110,7 +5110,7 @@ Docs: https://docs.openclaw.ai
 - Docs: add LINE channel guide. Thanks @thewilloftheshadow.
 - Docs: credit both contributors for Control UI refresh. (#1852) Thanks @EnzeD.
 - Docs: keep docs header sticky so navbar stays visible while scrolling. (#2445) Thanks @chenyuan99.
-- Docs: update exe.dev install instructions. (#https://github.com/openclaw/openclaw/pull/3047) Thanks @zackerthescar.
+- Docs: update exe.dev install instructions. (#https://github.com/tunacosgun/openclaw/pull/3047) Thanks @zackerthescar.
 
 ### Fixes
 

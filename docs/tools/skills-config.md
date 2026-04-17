@@ -9,7 +9,7 @@ title: "Skills Config"
 # Skills Config
 
 Most skills loader/install configuration lives under `skills` in
-`~/.openclaw/openclaw.json`. Agent-specific skill visibility lives under
+`~/.tunacosgun/openclaw.json`. Agent-specific skill visibility lives under
 `agents.defaults.skills` and `agents.list[].skills`.
 
 ```json5

@@ -52,7 +52,7 @@ reach other host locations unless sandboxing is enabled. See
 
 ## Paths (quick map)
 
-- Config: `~/.openclaw/openclaw.json` (or `OPENCLAW_CONFIG_PATH`)
+- Config: `~/.tunacosgun/openclaw.json` (or `OPENCLAW_CONFIG_PATH`)
 - State dir: `~/.openclaw` (or `OPENCLAW_STATE_DIR`)
 - Workspace: `~/.openclaw/workspace` (or `~/.openclaw/workspace-<agentId>`)
 - Agent dir: `~/.openclaw/agents/<agentId>/agent` (or `agents.list[].agentDir`)
@@ -368,7 +368,7 @@ openclaw channels login --channel whatsapp --account personal
 openclaw channels login --channel whatsapp --account biz
 ```
 
-`~/.openclaw/openclaw.json` (JSON5):
+`~/.tunacosgun/openclaw.json` (JSON5):
 
 ```js
 {

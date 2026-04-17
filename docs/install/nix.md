@@ -9,10 +9,10 @@ title: "Nix"
 
 # Nix Installation
 
-Install OpenClaw declaratively with **[nix-openclaw](https://github.com/openclaw/nix-openclaw)** -- a batteries-included Home Manager module.
+Install OpenClaw declaratively with **[nix-openclaw](https://github.com/tunacosgun/nix-openclaw)** -- a batteries-included Home Manager module.
 
 <Info>
-The [nix-openclaw](https://github.com/openclaw/nix-openclaw) repo is the source of truth for Nix installation. This page is a quick overview.
+The [nix-openclaw](https://github.com/tunacosgun/nix-openclaw) repo is the source of truth for Nix installation. This page is a quick overview.
 </Info>
 
 ## What You Get
@@ -48,7 +48,7 @@ The [nix-openclaw](https://github.com/openclaw/nix-openclaw) repo is the source 
   </Step>
 </Steps>
 
-See the [nix-openclaw README](https://github.com/openclaw/nix-openclaw) for full module options and examples.
+See the [nix-openclaw README](https://github.com/tunacosgun/nix-openclaw) for full module options and examples.
 
 ## Nix Mode Runtime Behavior
 
@@ -84,6 +84,6 @@ OpenClaw reads JSON5 config from `OPENCLAW_CONFIG_PATH` and stores mutable data 
 
 ## Related
 
-- [nix-openclaw](https://github.com/openclaw/nix-openclaw) -- full setup guide
+- [nix-openclaw](https://github.com/tunacosgun/nix-openclaw) -- full setup guide
 - [Wizard](/start/wizard) -- non-Nix CLI setup
 - [Docker](/install/docker) -- containerized setup

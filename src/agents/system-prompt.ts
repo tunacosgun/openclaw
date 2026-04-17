@@ -356,7 +356,7 @@ function buildDocsSection(params: { docsPath?: string; isMinimal: boolean; readT
     "## Documentation",
     `OpenClaw docs: ${docsPath}`,
     "Mirror: https://docs.openclaw.ai",
-    "Source: https://github.com/openclaw/openclaw",
+    "Source: https://github.com/tunacosgun/openclaw",
     "Community: https://discord.com/invite/clawd",
     "Find new skills: https://clawhub.ai",
     "For OpenClaw behavior, commands, config, or architecture: consult local docs first.",

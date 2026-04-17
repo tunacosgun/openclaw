@@ -6,12 +6,12 @@ If you believe you've found a security issue in OpenClaw, please report it priva
 
 Report vulnerabilities directly to the repository where the issue lives:
 
-- **Core CLI and gateway** — [openclaw/openclaw](https://github.com/openclaw/openclaw)
-- **macOS desktop app** — [openclaw/openclaw](https://github.com/openclaw/openclaw) (apps/macos)
-- **iOS app** — [openclaw/openclaw](https://github.com/openclaw/openclaw) (apps/ios)
-- **Android app** — [openclaw/openclaw](https://github.com/openclaw/openclaw) (apps/android)
-- **ClawHub** — [openclaw/clawhub](https://github.com/openclaw/clawhub)
-- **Trust and threat model** — [openclaw/trust](https://github.com/openclaw/trust)
+- **Core CLI and gateway** — [tunacosgun/openclaw](https://github.com/tunacosgun/openclaw)
+- **macOS desktop app** — [tunacosgun/openclaw](https://github.com/tunacosgun/openclaw) (apps/macos)
+- **iOS app** — [tunacosgun/openclaw](https://github.com/tunacosgun/openclaw) (apps/ios)
+- **Android app** — [tunacosgun/openclaw](https://github.com/tunacosgun/openclaw) (apps/android)
+- **ClawHub** — [openclaw/clawhub](https://github.com/tunacosgun/clawhub)
+- **Trust and threat model** — [openclaw/trust](https://github.com/tunacosgun/trust)
 
 For issues that don't fit a specific repo, or if you're unsure, email **[security@openclaw.ai](mailto:security@openclaw.ai)** and we'll route it.
 
@@ -309,7 +309,7 @@ Example secure Docker run:
 ```bash
 docker run --read-only --cap-drop=ALL \
   -v openclaw-data:/app/data \
-  openclaw/openclaw:latest
+  tunacosgun/openclaw:latest
 ```
 
 ## Security Scanning

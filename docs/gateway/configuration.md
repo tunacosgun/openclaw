@@ -9,7 +9,7 @@ title: "Configuration"
 
 # Configuration
 
-OpenClaw reads an optional <Tooltip tip="JSON5 supports comments and trailing commas">**JSON5**</Tooltip> config from `~/.openclaw/openclaw.json`.
+OpenClaw reads an optional <Tooltip tip="JSON5 supports comments and trailing commas">**JSON5**</Tooltip> config from `~/.tunacosgun/openclaw.json`.
 
 If the file is missing, OpenClaw uses safe defaults. Common reasons to add a config:
 
@@ -26,7 +26,7 @@ See the [full reference](/gateway/configuration-reference) for every available f
 ## Minimal config
 
 ```json5
-// ~/.openclaw/openclaw.json
+// ~/.tunacosgun/openclaw.json
 {
   agents: { defaults: { workspace: "~/.openclaw/workspace" } },
   channels: { whatsapp: { allowFrom: ["+15555550123"] } },
@@ -58,7 +58,7 @@ See the [full reference](/gateway/configuration-reference) for every available f
     fetch one path-scoped schema node plus immediate child summaries.
   </Tab>
   <Tab title="Direct edit">
-    Edit `~/.openclaw/openclaw.json` directly. The Gateway watches the file and applies changes automatically (see [hot reload](#config-hot-reload)).
+    Edit `~/.tunacosgun/openclaw.json` directly. The Gateway watches the file and applies changes automatically (see [hot reload](#config-hot-reload)).
   </Tab>
 </Tabs>
 
@@ -470,7 +470,7 @@ When validation fails:
     Use `$include` to organize large configs:
 
     ```json5
-    // ~/.openclaw/openclaw.json
+    // ~/.tunacosgun/openclaw.json
     {
       gateway: { port: 18789 },
       agents: { $include: "./agents.json5" },
@@ -492,7 +492,7 @@ When validation fails:
 
 ## Config hot reload
 
-The Gateway watches `~/.openclaw/openclaw.json` and applies changes automatically — no manual restart needed for most settings.
+The Gateway watches `~/.tunacosgun/openclaw.json` and applies changes automatically — no manual restart needed for most settings.
 
 ### Reload modes
 

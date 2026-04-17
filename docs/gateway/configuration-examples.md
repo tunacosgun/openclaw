@@ -22,7 +22,7 @@ Examples below are aligned with the current config schema. For the exhaustive re
 }
 ```
 
-Save to `~/.openclaw/openclaw.json` and you can DM the bot from that number.
+Save to `~/.tunacosgun/openclaw.json` and you can DM the bot from that number.
 
 ### Recommended starter
 
@@ -89,7 +89,7 @@ Save to `~/.openclaw/openclaw.json` and you can DM the bot from that number.
   // Logging
   logging: {
     level: "info",
-    file: "/tmp/openclaw/openclaw.log",
+    file: "/tmp/tunacosgun/openclaw.log",
     consoleLevel: "info",
     consoleStyle: "pretty",
     redactSensitive: "tools",

@@ -113,7 +113,7 @@ SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install -g openclaw@latest
 For contributors or anyone who wants to run from a local checkout:
 
 ```bash
-git clone https://github.com/openclaw/openclaw.git
+git clone https://github.com/tunacosgun/openclaw.git
 cd openclaw
 pnpm install && pnpm ui:build && pnpm build
 pnpm link --global
@@ -125,7 +125,7 @@ Or skip the link and use `pnpm openclaw ...` from inside the repo. See [Setup](/
 ### Install from GitHub main
 
 ```bash
-npm install -g github:openclaw/openclaw#main
+npm install -g github:tunacosgun/openclaw#main
 ```
 
 ### Containers and package managers

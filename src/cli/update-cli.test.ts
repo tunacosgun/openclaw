@@ -759,15 +759,15 @@ describe("update-cli", () => {
         mockPackageInstallStatus(createCaseDir("openclaw-update"));
         await updateCommand({ yes: true, tag: "main" });
       },
-      expectedSpec: "github:openclaw/openclaw#main",
+      expectedSpec: "github:tunacosgun/openclaw#main",
     },
     {
       name: "explicit git package spec",
       run: async () => {
         mockPackageInstallStatus(createCaseDir("openclaw-update"));
-        await updateCommand({ yes: true, tag: "github:openclaw/openclaw#main" });
+        await updateCommand({ yes: true, tag: "github:tunacosgun/openclaw#main" });
       },
-      expectedSpec: "github:openclaw/openclaw#main",
+      expectedSpec: "github:tunacosgun/openclaw#main",
     },
     {
       name: "OPENCLAW_UPDATE_PACKAGE_SPEC override",

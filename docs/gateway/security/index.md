@@ -132,7 +132,7 @@ Before opening a GHSA, verify all of these:
 1. Repro still works on latest `main` or latest release.
 2. Report includes exact code path (`file`, function, line range) and tested version/commit.
 3. Impact crosses a documented trust boundary (not just prompt injection).
-4. Claim is not listed in [Out of Scope](https://github.com/openclaw/openclaw/blob/main/SECURITY.md#out-of-scope).
+4. Claim is not listed in [Out of Scope](https://github.com/tunacosgun/openclaw/blob/main/SECURITY.md#out-of-scope).
 5. Existing advisories were checked for duplicates (reuse canonical GHSA when applicable).
 6. Deployment assumptions are explicit (loopback/local vs exposed, trusted vs untrusted operators).
 
@@ -246,7 +246,7 @@ High-signal `checkId` values you will most likely see in real deployments (not e
 | `fs.state_dir.perms_group_writable`                           | warn          | Group users can modify full OpenClaw state                                           | filesystem perms on `~/.openclaw`                                                                    | yes      |
 | `fs.state_dir.perms_readable`                                 | warn          | State dir is readable by others                                                      | filesystem perms on `~/.openclaw`                                                                    | yes      |
 | `fs.state_dir.symlink`                                        | warn          | State dir target becomes another trust boundary                                      | state dir filesystem layout                                                                          | no       |
-| `fs.config.perms_writable`                                    | critical      | Others can change auth/tool policy/config                                            | filesystem perms on `~/.openclaw/openclaw.json`                                                      | yes      |
+| `fs.config.perms_writable`                                    | critical      | Others can change auth/tool policy/config                                            | filesystem perms on `~/.tunacosgun/openclaw.json`                                                      | yes      |
 | `fs.config.symlink`                                           | warn          | Config target becomes another trust boundary                                         | config file filesystem layout                                                                        | no       |
 | `fs.config.perms_group_readable`                              | warn          | Group users can read config tokens/settings                                          | filesystem perms on config file                                                                      | yes      |
 | `fs.config.perms_world_readable`                              | critical      | Config can expose tokens/settings                                                    | filesystem perms on config file                                                                      | yes      |
@@ -747,7 +747,7 @@ Guidance:
 
 Keep config + state private on the gateway host:
 
-- `~/.openclaw/openclaw.json`: `600` (user read/write only)
+- `~/.tunacosgun/openclaw.json`: `600` (user read/write only)
 - `~/.openclaw`: `700` (user only)
 
 `openclaw doctor` can warn and offer to tighten these permissions.
@@ -1311,7 +1311,7 @@ If your AI does something bad:
 
 ### Audit
 
-1. Check Gateway logs: `/tmp/openclaw/openclaw-YYYY-MM-DD.log` (or `logging.file`).
+1. Check Gateway logs: `/tmp/tunacosgun/openclaw-YYYY-MM-DD.log` (or `logging.file`).
 2. Review the relevant transcript(s): `~/.openclaw/agents/<agentId>/sessions/*.jsonl`.
 3. Review recent config changes (anything that could have widened access: `gateway.bind`, `gateway.auth`, dm/group policies, `tools.elevated`, plugin changes).
 4. Re-run `openclaw security audit --deep` and confirm critical findings are resolved.

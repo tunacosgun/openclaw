@@ -19,7 +19,7 @@ If you have not set up Docker yet, start with [Docker](/install/docker).
 Use the canonical helper path:
 
 ```bash
-mkdir -p ~/.clawdock && curl -sL https://raw.githubusercontent.com/openclaw/openclaw/main/scripts/clawdock/clawdock-helpers.sh -o ~/.clawdock/clawdock-helpers.sh
+mkdir -p ~/.clawdock && curl -sL https://raw.githubusercontent.com/tunacosgun/openclaw/main/scripts/clawdock/clawdock-helpers.sh -o ~/.clawdock/clawdock-helpers.sh
 echo 'source ~/.clawdock/clawdock-helpers.sh' >> ~/.zshrc && source ~/.zshrc
 ```
 
@@ -95,7 +95,7 @@ ClawDock works with the same Docker config split described in [Docker](/install/
 - `<project>/.env` for Docker-specific values like image name, ports, and the gateway token
 - `~/.openclaw/.env` for env-backed provider keys and bot tokens
 - `~/.openclaw/agents/<agentId>/agent/auth-profiles.json` for stored provider OAuth/API-key auth
-- `~/.openclaw/openclaw.json` for behavior config
+- `~/.tunacosgun/openclaw.json` for behavior config
 
 Use `clawdock-show-config` when you want to inspect the `.env` files and `openclaw.json` quickly. It redacts `.env` values in its printed output.
 

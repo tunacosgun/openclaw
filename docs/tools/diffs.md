@@ -197,7 +197,7 @@ Mode behavior summary:
 
 ## Plugin defaults
 
-Set plugin-wide defaults in `~/.openclaw/openclaw.json`:
+Set plugin-wide defaults in `~/.tunacosgun/openclaw.json`:
 
 ```json5
 {

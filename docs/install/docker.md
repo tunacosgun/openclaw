@@ -38,12 +38,12 @@ Docker is **optional**. Use it only if you want a containerized gateway or to va
     This builds the gateway image locally. To use a pre-built image instead:
 
     ```bash
-    export OPENCLAW_IMAGE="ghcr.io/openclaw/openclaw:latest"
+    export OPENCLAW_IMAGE="ghcr.io/tunacosgun/openclaw:latest"
     ./scripts/docker/setup.sh
     ```
 
     Pre-built images are published at the
-    [GitHub Container Registry](https://github.com/openclaw/openclaw/pkgs/container/openclaw).
+    [GitHub Container Registry](https://github.com/tunacosgun/openclaw/pkgs/container/openclaw).
     Common tags: `main`, `latest`, `<version>` (e.g. `2026.2.26`).
 
   </Step>
@@ -190,7 +190,7 @@ and rolling file logs under `/tmp/openclaw/`.
 For easier day-to-day Docker management, install `ClawDock`:
 
 ```bash
-mkdir -p ~/.clawdock && curl -sL https://raw.githubusercontent.com/openclaw/openclaw/main/scripts/clawdock/clawdock-helpers.sh -o ~/.clawdock/clawdock-helpers.sh
+mkdir -p ~/.clawdock && curl -sL https://raw.githubusercontent.com/tunacosgun/openclaw/main/scripts/clawdock/clawdock-helpers.sh -o ~/.clawdock/clawdock-helpers.sh
 echo 'source ~/.clawdock/clawdock-helpers.sh' >> ~/.zshrc && source ~/.zshrc
 ```
 
@@ -353,7 +353,7 @@ scripts/sandbox-setup.sh
 <AccordionGroup>
   <Accordion title="Image missing or sandbox container not starting">
     Build the sandbox image with
-    [`scripts/sandbox-setup.sh`](https://github.com/openclaw/openclaw/blob/main/scripts/sandbox-setup.sh)
+    [`scripts/sandbox-setup.sh`](https://github.com/tunacosgun/openclaw/blob/main/scripts/sandbox-setup.sh)
     or set `agents.defaults.sandbox.docker.image` to your custom image.
     Containers are auto-created per session on demand.
   </Accordion>

@@ -23,12 +23,12 @@ const CASES: GuidanceCase[] = [
   {
     file: "skills/gh-issues/SKILL.md",
     required: ["OPENCLAW_CONFIG_PATH"],
-    forbidden: ["cat ~/.openclaw/openclaw.json"],
+    forbidden: ["cat ~/.tunacosgun/openclaw.json"],
   },
   {
     file: "skills/canvas/SKILL.md",
     required: ["OPENCLAW_CONFIG_PATH"],
-    forbidden: ["cat ~/.openclaw/openclaw.json"],
+    forbidden: ["cat ~/.tunacosgun/openclaw.json"],
   },
   {
     file: "skills/openai-whisper-api/SKILL.md",

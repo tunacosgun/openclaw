@@ -9,7 +9,7 @@ on:
         default: main
         type: string
       workflow_ref:
-        description: Optional openclaw/openclaw ref that provides the reusable workflow harness
+        description: Optional tunacosgun/openclaw ref that provides the reusable workflow harness
         required: false
         default: ""
         type: string
@@ -58,7 +58,7 @@ on:
         required: true
         type: string
       workflow_ref:
-        description: Optional openclaw/openclaw ref that provides the reusable workflow harness
+        description: Optional tunacosgun/openclaw ref that provides the reusable workflow harness
         required: false
         default: ""
         type: string
@@ -114,7 +114,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
   NODE_VERSION: "24.x"
   PNPM_VERSION: "10.32.1"
-  OPENCLAW_REPOSITORY: openclaw/openclaw
+  OPENCLAW_REPOSITORY: tunacosgun/openclaw
   TSX_VERSION: "4.21.0"
 
 jobs:

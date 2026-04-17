@@ -54,7 +54,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
    If RPC is down, fall back to:
 
    ```bash
-   tail -f "$(ls -t /tmp/openclaw/openclaw-*.log | head -1)"
+   tail -f "$(ls -t /tmp/tunacosgun/openclaw-*.log | head -1)"
    ```
 
    File logs are separate from service logs; see [Logging](/logging) and [Troubleshooting](/gateway/troubleshooting).
@@ -103,8 +103,8 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
     necessary commands. That keeps changes small and easier to audit.
 
     If you discover a real bug or fix, please file a GitHub issue or send a PR:
-    [https://github.com/openclaw/openclaw/issues](https://github.com/openclaw/openclaw/issues)
-    [https://github.com/openclaw/openclaw/pulls](https://github.com/openclaw/openclaw/pulls)
+    [https://github.com/tunacosgun/openclaw/issues](https://github.com/tunacosgun/openclaw/issues)
+    [https://github.com/tunacosgun/openclaw/pulls](https://github.com/tunacosgun/openclaw/pulls)
 
     Start with these commands (share outputs when asking for help):
 
@@ -156,7 +156,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
     From source (contributors/dev):
 
     ```bash
-    git clone https://github.com/openclaw/openclaw.git
+    git clone https://github.com/tunacosgun/openclaw.git
     cd openclaw
     pnpm install
     pnpm build
@@ -299,7 +299,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
 
   <Accordion title="Where do I see what is new in the latest version?">
     Check the GitHub changelog:
-    [https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md](https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md)
+    [https://github.com/tunacosgun/openclaw/blob/main/CHANGELOG.md](https://github.com/tunacosgun/openclaw/blob/main/CHANGELOG.md)
 
     Newest entries are at the top. If the top section is marked **Unreleased**, the next dated
     section is the latest shipped version. Entries are grouped by **Highlights**, **Changes**, and
@@ -313,7 +313,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
     Please help us unblock it by reporting here: [https://spa.xfinity.com/check_url_status](https://spa.xfinity.com/check_url_status).
 
     If you still can't reach the site, the docs are mirrored on GitHub:
-    [https://github.com/openclaw/openclaw/tree/main/docs](https://github.com/openclaw/openclaw/tree/main/docs)
+    [https://github.com/tunacosgun/openclaw/tree/main/docs](https://github.com/tunacosgun/openclaw/tree/main/docs)
 
   </Accordion>
 
@@ -329,7 +329,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
     point at the **same version** after promotion.
 
     See what changed:
-    [https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md](https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md)
+    [https://github.com/tunacosgun/openclaw/blob/main/CHANGELOG.md](https://github.com/tunacosgun/openclaw/blob/main/CHANGELOG.md)
 
     For install one-liners and the difference between beta and dev, see the accordion below.
 
@@ -378,7 +378,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
     If you prefer a clean clone manually, use:
 
     ```bash
-    git clone https://github.com/openclaw/openclaw.git
+    git clone https://github.com/tunacosgun/openclaw.git
     cd openclaw
     pnpm install
     pnpm build
@@ -482,7 +482,7 @@ Quick answers plus deeper troubleshooting for real-world setups (local dev, VPS,
 
     If you still reproduce this on latest OpenClaw, track/report it in:
 
-    - [Issue #30640](https://github.com/openclaw/openclaw/issues/30640)
+    - [Issue #30640](https://github.com/tunacosgun/openclaw/issues/30640)
 
   </Accordion>
 
@@ -826,7 +826,7 @@ for usage/billing and raise limits as needed.
     From npm to git:
 
     ```bash
-    git clone https://github.com/openclaw/openclaw.git
+    git clone https://github.com/tunacosgun/openclaw.git
     cd openclaw
     pnpm install
     pnpm build
@@ -997,11 +997,11 @@ for usage/billing and raise limits as needed.
 
 <AccordionGroup>
   <Accordion title="How do I customize skills without keeping the repo dirty?">
-    Use managed overrides instead of editing the repo copy. Put your changes in `~/.openclaw/skills/<name>/SKILL.md` (or add a folder via `skills.load.extraDirs` in `~/.openclaw/openclaw.json`). Precedence is `<workspace>/skills` → `<workspace>/.agents/skills` → `~/.agents/skills` → `~/.openclaw/skills` → bundled → `skills.load.extraDirs`, so managed overrides still win over bundled skills without touching git. If you need the skill installed globally but only visible to some agents, keep the shared copy in `~/.openclaw/skills` and control visibility with `agents.defaults.skills` and `agents.list[].skills`. Only upstream-worthy edits should live in the repo and go out as PRs.
+    Use managed overrides instead of editing the repo copy. Put your changes in `~/.openclaw/skills/<name>/SKILL.md` (or add a folder via `skills.load.extraDirs` in `~/.tunacosgun/openclaw.json`). Precedence is `<workspace>/skills` → `<workspace>/.agents/skills` → `~/.agents/skills` → `~/.openclaw/skills` → bundled → `skills.load.extraDirs`, so managed overrides still win over bundled skills without touching git. If you need the skill installed globally but only visible to some agents, keep the shared copy in `~/.openclaw/skills` and control visibility with `agents.defaults.skills` and `agents.list[].skills`. Only upstream-worthy edits should live in the repo and go out as PRs.
   </Accordion>
 
   <Accordion title="Can I load skills from a custom folder?">
-    Yes. Add extra directories via `skills.load.extraDirs` in `~/.openclaw/openclaw.json` (lowest precedence). Default precedence is `<workspace>/skills` → `<workspace>/.agents/skills` → `~/.agents/skills` → `~/.openclaw/skills` → bundled → `skills.load.extraDirs`. `clawhub` installs into `./skills` by default, which OpenClaw treats as `<workspace>/skills` on the next session. If the skill should only be visible to certain agents, pair that with `agents.defaults.skills` or `agents.list[].skills`.
+    Yes. Add extra directories via `skills.load.extraDirs` in `~/.tunacosgun/openclaw.json` (lowest precedence). Default precedence is `<workspace>/skills` → `<workspace>/.agents/skills` → `~/.agents/skills` → `~/.openclaw/skills` → bundled → `skills.load.extraDirs`. `clawhub` installs into `./skills` by default, which OpenClaw treats as `<workspace>/skills` on the next session. If the skill should only be visible to certain agents, pair that with `agents.defaults.skills` or `agents.list[].skills`.
   </Accordion>
 
   <Accordion title="How can I use different models for different tasks?">
@@ -1484,7 +1484,7 @@ for usage/billing and raise limits as needed.
 
 <AccordionGroup>
   <Accordion title="What format is the config? Where is it?">
-    OpenClaw reads an optional **JSON5** config from `$OPENCLAW_CONFIG_PATH` (default: `~/.openclaw/openclaw.json`):
+    OpenClaw reads an optional **JSON5** config from `$OPENCLAW_CONFIG_PATH` (default: `~/.tunacosgun/openclaw.json`):
 
     ```
     $OPENCLAW_CONFIG_PATH
@@ -1631,7 +1631,7 @@ for usage/billing and raise limits as needed.
 
     Recover:
 
-    - Restore from backup (git or a copied `~/.openclaw/openclaw.json`).
+    - Restore from backup (git or a copied `~/.tunacosgun/openclaw.json`).
     - If you have no backup, re-run `openclaw doctor` and reconfigure channels/models.
     - If this was unexpected, file a bug and include your last known config or any backup.
     - A local coding agent can often reconstruct a working config from logs or history.
@@ -2237,7 +2237,7 @@ for usage/billing and raise limits as needed.
     - `/model` in chat (quick, per-session)
     - `openclaw models set ...` (updates just model config)
     - `openclaw configure --section model` (interactive)
-    - edit `agents.defaults.model` in `~/.openclaw/openclaw.json`
+    - edit `agents.defaults.model` in `~/.tunacosgun/openclaw.json`
 
     Avoid `config.apply` with a partial object unless you intend to replace the whole config.
     For RPC edits, inspect with `config.schema.lookup` first and prefer `config.patch`. The lookup payload gives you the normalized path, shallow schema docs/constraints, and immediate child summaries.
@@ -2880,7 +2880,7 @@ Related: [/concepts/oauth](/concepts/oauth) (OAuth flows, token storage, multi-a
     File logs (structured):
 
     ```
-    /tmp/openclaw/openclaw-YYYY-MM-DD.log
+    /tmp/tunacosgun/openclaw-YYYY-MM-DD.log
     ```
 
     You can set a stable path via `logging.file`. File log level is controlled by `logging.level`. Console verbosity is controlled by `--verbose` and `logging.consoleLevel`.
@@ -3297,4 +3297,4 @@ Related: [/concepts/oauth](/concepts/oauth) (OAuth flows, token storage, multi-a
 
 ---
 
-Still stuck? Ask in [Discord](https://discord.com/invite/clawd) or open a [GitHub discussion](https://github.com/openclaw/openclaw/discussions).
+Still stuck? Ask in [Discord](https://discord.com/invite/clawd) or open a [GitHub discussion](https://github.com/tunacosgun/openclaw/discussions).

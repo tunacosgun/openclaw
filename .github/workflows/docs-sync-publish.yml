@@ -33,7 +33,7 @@ jobs:
         run: |
           set -euo pipefail
           git clone \
-            "https://x-access-token:${OPENCLAW_DOCS_SYNC_TOKEN}@github.com/openclaw/docs.git" \
+            "https://x-access-token:${OPENCLAW_DOCS_SYNC_TOKEN}@github.com/tunacosgun/docs.git" \
             publish
 
       - name: Sync docs into publish repo

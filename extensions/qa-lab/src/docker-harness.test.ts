@@ -64,7 +64,7 @@ describe("qa docker harness", () => {
     expect(compose).toContain(
       "cp -R /opt/openclaw-scaffold/seed-workspace/. /tmp/openclaw/workspace/",
     );
-    expect(compose).toContain("OPENCLAW_CONFIG_PATH: /tmp/openclaw/openclaw.json");
+    expect(compose).toContain("OPENCLAW_CONFIG_PATH: /tmp/tunacosgun/openclaw.json");
     expect(compose).toContain("OPENCLAW_STATE_DIR: /tmp/openclaw/state");
     expect(compose).toContain('OPENCLAW_NO_RESPAWN: "1"');
 

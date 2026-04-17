@@ -92,8 +92,8 @@ export async function loadMSTeamsSdk(): Promise<MSTeamsTeamsSdk> {
  * HttpPlugin (which uses the deprecated `plugins` array and registers an
  * Express middleware with the pattern `/api*` — invalid in Express 5).
  *
- * See: https://github.com/openclaw/openclaw/issues/55161
- * See: https://github.com/openclaw/openclaw/issues/60732
+ * See: https://github.com/tunacosgun/openclaw/issues/55161
+ * See: https://github.com/tunacosgun/openclaw/issues/60732
  */
 function createNoOpHttpServerAdapter(): IHttpServerAdapter {
   return {

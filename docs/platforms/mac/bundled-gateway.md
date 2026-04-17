@@ -51,7 +51,7 @@ Behavior:
 
 Logging:
 
-- launchd stdout/err: `/tmp/openclaw/openclaw-gateway.log`
+- launchd stdout/err: `/tmp/tunacosgun/openclaw-gateway.log`
 
 ## Version compatibility
 

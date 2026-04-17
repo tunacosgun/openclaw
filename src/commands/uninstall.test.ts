@@ -29,7 +29,7 @@ describe("uninstallCommand", () => {
     vi.clearAllMocks();
     resolveCleanupPlanFromDisk.mockReturnValue({
       stateDir: "/tmp/.openclaw",
-      configPath: "/tmp/.openclaw/openclaw.json",
+      configPath: "/tmp/.tunacosgun/openclaw.json",
       oauthDir: "/tmp/.openclaw/credentials",
       configInsideState: true,
       oauthInsideState: true,

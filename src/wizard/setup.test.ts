@@ -103,7 +103,7 @@ const resolveGatewayPort = vi.hoisted(() =>
 );
 const readConfigFileSnapshot = vi.hoisted(() =>
   vi.fn(async () => ({
-    path: "/tmp/.openclaw/openclaw.json",
+    path: "/tmp/.tunacosgun/openclaw.json",
     exists: false,
     raw: null as string | null,
     parsed: {},
@@ -294,7 +294,7 @@ describe("runSetupWizard", () => {
   it("does not crash when preferred-provider lookup sees a provider without an id", async () => {
     setupChannels.mockClear();
     readConfigFileSnapshot.mockResolvedValueOnce({
-      path: "/tmp/.openclaw/openclaw.json",
+      path: "/tmp/.tunacosgun/openclaw.json",
       exists: true,
       raw: "{}",
       parsed: {},
@@ -355,7 +355,7 @@ describe("runSetupWizard", () => {
 
   it("exits when config is invalid", async () => {
     readConfigFileSnapshot.mockResolvedValueOnce({
-      path: "/tmp/.openclaw/openclaw.json",
+      path: "/tmp/.tunacosgun/openclaw.json",
       exists: true,
       raw: "{}",
       parsed: {},
@@ -584,7 +584,7 @@ describe("runSetupWizard", () => {
       },
     ]);
     readConfigFileSnapshot.mockResolvedValueOnce({
-      path: "/tmp/.openclaw/openclaw.json",
+      path: "/tmp/.tunacosgun/openclaw.json",
       exists: true,
       raw: "{}",
       parsed: {},
@@ -639,7 +639,7 @@ describe("runSetupWizard", () => {
     process.env.OPENCLAW_GATEWAY_PASSWORD = "gateway-ref-password"; // pragma: allowlist secret
     probeGatewayReachable.mockClear();
     readConfigFileSnapshot.mockResolvedValueOnce({
-      path: "/tmp/.openclaw/openclaw.json",
+      path: "/tmp/.tunacosgun/openclaw.json",
       exists: true,
       raw: "{}",
       parsed: {},

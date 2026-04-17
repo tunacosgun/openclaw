@@ -39,7 +39,7 @@ function readPluginVersion(): string {
 // Read the package version from package.json.
 const PLUGIN_VERSION = readPluginVersion();
 
-const QQBOT_PLUGIN_GITHUB_URL = "https://github.com/openclaw/openclaw/tree/main/extensions/qqbot";
+const QQBOT_PLUGIN_GITHUB_URL = "https://github.com/tunacosgun/openclaw/tree/main/extensions/qqbot";
 const QQBOT_UPGRADE_GUIDE_URL = "https://q.qq.com/qqbot/openclaw/upgrade.html";
 
 // ============ Types ============

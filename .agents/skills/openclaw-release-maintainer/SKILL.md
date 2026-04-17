@@ -38,7 +38,7 @@ Use this skill for release and publish-time workflow. Keep ordinary development 
 - “Bump version everywhere” means all version locations above except `appcast.xml`.
 - Release signing and notary credentials live outside the repo in the private maintainer docs.
 - Every OpenClaw release ships the npm package and macOS app together.
-- The production Sparkle feed lives at `https://raw.githubusercontent.com/openclaw/openclaw/main/appcast.xml`, and the canonical published file is `appcast.xml` on `main` in the `openclaw` repo.
+- The production Sparkle feed lives at `https://raw.githubusercontent.com/tunacosgun/openclaw/main/appcast.xml`, and the canonical published file is `appcast.xml` on `main` in the `openclaw` repo.
 - That shared production Sparkle feed is stable-only. Beta mac releases may
   upload assets to the GitHub prerelease, but they must not replace the shared
   `appcast.xml` unless a separate beta feed exists.
@@ -121,7 +121,7 @@ node --import tsx scripts/openclaw-npm-postpublish-verify.ts <published-version>
 - Actual npm install/update phases are capped at 5 minutes. If `npm install -g`, installer package install, or `openclaw update` takes longer than 300s in release e2e, stop treating the run as healthy progress and debug the installer/updater or harness.
 - Serialize host build/package mutations ahead of VM lanes. Finish `pnpm build`, `pnpm ui:build`, `pnpm release:check`, install smoke, and any Docker/package-prep lanes before starting Parallels `npm pack` lanes; otherwise `dist` can disappear during VM pack prep and produce false failures.
 - Include mac release readiness in preflight by running the public validation
-  workflow in `openclaw/openclaw` and the real mac preflight in
+  workflow in `tunacosgun/openclaw` and the real mac preflight in
   `openclaw/releases-private` for every release.
 - Treat the `appcast.xml` update on `main` as part of mac release readiness, not an optional follow-up.
 - The workflows remain tag-based. The agent is responsible for making sure
@@ -164,7 +164,7 @@ node --import tsx scripts/openclaw-npm-postpublish-verify.ts <published-version>
   the npm version is already published.
 - Validation-only runs may be dispatched from a branch when you are testing a
   workflow change before merge.
-- `.github/workflows/macos-release.yml` in `openclaw/openclaw` is now a
+- `.github/workflows/macos-release.yml` in `tunacosgun/openclaw` is now a
   public validation-only handoff. It validates the tag/release state and points
   operators to the private repo. It still rebuilds the JS outputs needed for
   release validation, but it does not sign, notarize, or publish macOS
@@ -187,13 +187,13 @@ node --import tsx scripts/openclaw-npm-postpublish-verify.ts <published-version>
   attempts should fail before the protected environment is reached.
 - The release workflows stay tag-based; rely on the documented release sequence
   rather than workflow-level SHA pinning.
-- The `npm-release` environment must be approved by `@openclaw/openclaw-release-managers` before publish continues.
+- The `npm-release` environment must be approved by `@tunacosgun/openclaw-release-managers` before publish continues.
 - Mac publish uses
   `openclaw/releases-private/.github/workflows/openclaw-macos-publish.yml` for
   private mac preflight artifact preparation and real publish artifact
   promotion.
 - Real private mac publish uploads the packaged `.zip`, `.dmg`, and
-  `.dSYM.zip` assets to the existing GitHub release in `openclaw/openclaw`
+  `.dSYM.zip` assets to the existing GitHub release in `tunacosgun/openclaw`
   automatically when `OPENCLAW_PUBLIC_REPO_RELEASE_TOKEN` is present in the
   private repo `mac-release` environment.
 - For stable releases, the agent must also download the signed
@@ -255,7 +255,7 @@ node --import tsx scripts/openclaw-npm-postpublish-verify.ts <published-version>
    and choose the intended `npm_dist_tag` (`beta` default; `latest` only for
    an intentional direct stable publish). Wait for it to pass. Save that run id
    because the real publish requires it to reuse the prepared npm tarball.
-10. Start `.github/workflows/macos-release.yml` in `openclaw/openclaw` and wait
+10. Start `.github/workflows/macos-release.yml` in `tunacosgun/openclaw` and wait
     for the public validation-only run to pass.
 11. Start
     `openclaw/releases-private/.github/workflows/openclaw-macos-validate.yml`
@@ -272,7 +272,7 @@ node --import tsx scripts/openclaw-npm-postpublish-verify.ts <published-version>
     the real publish, choose `npm_dist_tag` (`beta` default, `latest` only when
     you intentionally want direct stable publish), keep it the same as the
     preflight run, and pass the successful npm `preflight_run_id`.
-15. Wait for `npm-release` approval from `@openclaw/openclaw-release-managers`.
+15. Wait for `npm-release` approval from `@tunacosgun/openclaw-release-managers`.
 16. If the stable release was published to `beta`, start
     `.github/workflows/openclaw-npm-release.yml` again after beta validation
     passes with the same stable tag, `promote_beta_to_latest=true`,
@@ -290,7 +290,7 @@ node --import tsx scripts/openclaw-npm-postpublish-verify.ts <published-version>
     wait for success.
 19. Verify the successful real private mac run uploaded the `.zip`, `.dmg`,
     and `.dSYM.zip` artifacts to the existing GitHub release in
-    `openclaw/openclaw`.
+    `tunacosgun/openclaw`.
 20. For stable releases, download `macos-appcast-<tag>` from the successful
     private mac run, update `appcast.xml` on `main`, and verify the feed.
 21. For beta releases, publish the mac assets but expect no shared production

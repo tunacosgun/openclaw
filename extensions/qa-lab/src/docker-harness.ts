@@ -125,7 +125,7 @@ ${imageBlock}    pull_policy: never
     ports:
       - "${params.gatewayPort}:18789"
     environment:
-      OPENCLAW_CONFIG_PATH: /tmp/openclaw/openclaw.json
+      OPENCLAW_CONFIG_PATH: /tmp/tunacosgun/openclaw.json
       OPENCLAW_STATE_DIR: /tmp/openclaw/state
       OPENCLAW_NO_RESPAWN: "1"
       OPENCLAW_SKIP_GMAIL_WATCHER: "1"
@@ -157,7 +157,7 @@ ${
     command:
       - sh
       - -lc
-      - mkdir -p /tmp/openclaw/workspace /tmp/openclaw/state && cp /opt/openclaw-scaffold/openclaw.json /tmp/openclaw/openclaw.json && cp -R /opt/openclaw-scaffold/seed-workspace/. /tmp/openclaw/workspace/ && ln -snf /opt/openclaw-repo /tmp/openclaw/workspace/repo && exec node dist/index.js gateway run --port 18789 --bind lan --allow-unconfigured
+      - mkdir -p /tmp/openclaw/workspace /tmp/openclaw/state && cp /opt/openclaw-scaffold/openclaw.json /tmp/tunacosgun/openclaw.json && cp -R /opt/openclaw-scaffold/seed-workspace/. /tmp/openclaw/workspace/ && ln -snf /opt/openclaw-repo /tmp/openclaw/workspace/repo && exec node dist/index.js gateway run --port 18789 --bind lan --allow-unconfigured
 `;
 }
 

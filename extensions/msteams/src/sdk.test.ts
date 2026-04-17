@@ -144,7 +144,7 @@ function createSdkStub(): MSTeamsTeamsSdk {
 
 describe("createMSTeamsApp", () => {
   it("does not crash with express 5 path-to-regexp (#55161)", async () => {
-    // Regression test for: https://github.com/openclaw/openclaw/issues/55161
+    // Regression test for: https://github.com/tunacosgun/openclaw/issues/55161
     // createMSTeamsApp passes a no-op httpServerAdapter to prevent the SDK from
     // creating its default HttpPlugin (which registers `/api*` — invalid in Express 5).
     const { App } = await import("@microsoft/teams.apps");

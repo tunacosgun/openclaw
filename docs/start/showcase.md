@@ -394,7 +394,7 @@ Multi-lingual audio transcription via OpenRouter (Gemini, etc). Available on Cla
   Control and automate Home Assistant devices via natural language.
 </Card>
 
-<Card title="Nix Packaging" icon="snowflake" href="https://github.com/openclaw/nix-openclaw">
+<Card title="Nix Packaging" icon="snowflake" href="https://github.com/tunacosgun/nix-openclaw">
   **@openclaw** • `nix` `packaging` `deployment`
   
   Batteries-included nixified OpenClaw configuration for reproducible deployments.

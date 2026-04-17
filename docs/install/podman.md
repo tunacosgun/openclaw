@@ -46,7 +46,7 @@ The intended model is:
 Setup details:
 
 - `./scripts/podman/setup.sh` builds `openclaw:local` in your rootless Podman store by default, or uses `OPENCLAW_IMAGE` / `OPENCLAW_PODMAN_IMAGE` if you set one.
-- It creates `~/.openclaw/openclaw.json` with `gateway.mode: "local"` if missing.
+- It creates `~/.tunacosgun/openclaw.json` with `gateway.mode: "local"` if missing.
 - It creates `~/.openclaw/.env` with `OPENCLAW_GATEWAY_TOKEN` if missing.
 - For manual launches, the helper reads only a small allowlist of Podman-related keys from `~/.openclaw/.env` and passes explicit runtime env vars to the container; it does not hand the full env file to Podman.
 
@@ -197,7 +197,7 @@ Quadlet note:
 ## Troubleshooting
 
 - **Permission denied (EACCES) on config or workspace:** The container runs with `--userns=keep-id` and `--user <your uid>:<your gid>` by default. Ensure the host config/workspace paths are owned by your current user.
-- **Gateway start blocked (missing `gateway.mode=local`):** Ensure `~/.openclaw/openclaw.json` exists and sets `gateway.mode="local"`. `scripts/podman/setup.sh` creates this if missing.
+- **Gateway start blocked (missing `gateway.mode=local`):** Ensure `~/.tunacosgun/openclaw.json` exists and sets `gateway.mode="local"`. `scripts/podman/setup.sh` creates this if missing.
 - **Container CLI commands hit the wrong target:** Use `openclaw --container <name> ...` explicitly, or export `OPENCLAW_CONTAINER=<name>` in your shell.
 - **`openclaw update` fails with `--container`:** Expected. Rebuild/pull the image, then restart the container or the Quadlet service.
 - **Quadlet service does not start:** Run `systemctl --user daemon-reload`, then `systemctl --user start openclaw.service`. On headless systems you may also need `sudo loginctl enable-linger "$(whoami)"`.

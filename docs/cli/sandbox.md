@@ -165,7 +165,7 @@ It uses the Gateway’s runtime registry and avoids mismatches when scope/sessio
 
 ## Configuration
 
-Sandbox settings live in `~/.openclaw/openclaw.json` under `agents.defaults.sandbox` (per-agent overrides go in `agents.list[].sandbox`):
+Sandbox settings live in `~/.tunacosgun/openclaw.json` under `agents.defaults.sandbox` (per-agent overrides go in `agents.list[].sandbox`):
 
 ```jsonc
 {

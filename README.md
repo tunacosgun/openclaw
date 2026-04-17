@@ -2,8 +2,8 @@
 
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.svg">
-        <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text.svg" alt="OpenClaw" width="500">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/openclaw-logo-text-dark.svg">
+        <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/openclaw-logo-text.svg" alt="OpenClaw" width="500">
     </picture>
 </p>
 
@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/openclaw/openclaw/actions/workflows/ci.yml?branch=main"><img src="https://img.shields.io/github/actions/workflow/status/openclaw/openclaw/ci.yml?branch=main&style=for-the-badge" alt="CI status"></a>
-  <a href="https://github.com/openclaw/openclaw/releases"><img src="https://img.shields.io/github/v/release/openclaw/openclaw?include_prereleases&style=for-the-badge" alt="GitHub release"></a>
+  <a href="https://github.com/tunacosgun/openclaw/actions/workflows/ci.yml?branch=main"><img src="https://img.shields.io/github/actions/workflow/status/tunacosgun/openclaw/ci.yml?branch=main&style=for-the-badge" alt="CI status"></a>
+  <a href="https://github.com/tunacosgun/openclaw/releases"><img src="https://img.shields.io/github/v/release/tunacosgun/openclaw?include_prereleases&style=for-the-badge" alt="GitHub release"></a>
   <a href="https://discord.gg/clawd"><img src="https://img.shields.io/discord/1456350064065904867?label=Discord&logo=discord&logoColor=white&color=5865F2&style=for-the-badge" alt="Discord"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
 </p>
@@ -25,7 +25,7 @@ If you want a personal, single-user assistant that feels local, fast, and always
 
 Supported channels include: WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, BlueBubbles, IRC, Microsoft Teams, Matrix, Feishu, LINE, Mattermost, Nextcloud Talk, Nostr, Synology Chat, Tlon, Twitch, Zalo, Zalo Personal, WeChat, QQ, WebChat.
 
-[Website](https://openclaw.ai) · [Docs](https://docs.openclaw.ai) · [Vision](VISION.md) · [DeepWiki](https://deepwiki.com/openclaw/openclaw) · [Getting Started](https://docs.openclaw.ai/start/getting-started) · [Updating](https://docs.openclaw.ai/install/updating) · [Showcase](https://docs.openclaw.ai/start/showcase) · [FAQ](https://docs.openclaw.ai/help/faq) · [Onboarding](https://docs.openclaw.ai/start/wizard) · [Nix](https://github.com/openclaw/nix-openclaw) · [Docker](https://docs.openclaw.ai/install/docker) · [Discord](https://discord.gg/clawd)
+[Website](https://openclaw.ai) · [Docs](https://docs.openclaw.ai) · [Vision](VISION.md) · [DeepWiki](https://deepwiki.com/tunacosgun/openclaw) · [Getting Started](https://docs.openclaw.ai/start/getting-started) · [Updating](https://docs.openclaw.ai/install/updating) · [Showcase](https://docs.openclaw.ai/start/showcase) · [FAQ](https://docs.openclaw.ai/help/faq) · [Onboarding](https://docs.openclaw.ai/start/wizard) · [Nix](https://github.com/tunacosgun/nix-openclaw) · [Docker](https://docs.openclaw.ai/install/docker) · [Discord](https://discord.gg/clawd)
 
 New install? Start here: [Getting started](https://docs.openclaw.ai/start/getting-started)
 
@@ -40,48 +40,48 @@ Works with npm, pnpm, or bun.
     <td align="center" width="16.66%">
       <a href="https://openai.com/">
         <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/openai-light.svg">
-          <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/openai.svg" alt="OpenAI" height="28">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/openai-light.svg">
+          <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/openai.svg" alt="OpenAI" height="28">
         </picture>
       </a>
     </td>
     <td align="center" width="16.66%">
       <a href="https://github.com/">
         <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/github-light.svg">
-          <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/github.svg" alt="GitHub" height="28">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/github-light.svg">
+          <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/github.svg" alt="GitHub" height="28">
         </picture>
       </a>
     </td>
     <td align="center" width="16.66%">
       <a href="https://www.nvidia.com/">
         <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/nvidia.svg">
-          <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/nvidia-dark.svg" alt="NVIDIA" height="28">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/nvidia.svg">
+          <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/nvidia-dark.svg" alt="NVIDIA" height="28">
         </picture>
       </a>
     </td>
     <td align="center" width="16.66%">
       <a href="https://vercel.com/">
         <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/vercel-light.svg">
-          <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/vercel.svg" alt="Vercel" height="24">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/vercel-light.svg">
+          <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/vercel.svg" alt="Vercel" height="24">
         </picture>
       </a>
     </td>
     <td align="center" width="16.66%">
       <a href="https://blacksmith.sh/">
         <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/blacksmith-light.svg">
-          <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/blacksmith.svg" alt="Blacksmith" height="28">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/blacksmith-light.svg">
+          <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/blacksmith.svg" alt="Blacksmith" height="28">
         </picture>
       </a>
     </td>
     <td align="center" width="16.66%">
       <a href="https://www.convex.dev/">
         <picture>
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/convex-light.svg">
-          <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/sponsors/convex.svg" alt="Convex" height="24">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/convex-light.svg">
+          <img src="https://raw.githubusercontent.com/tunacosgun/openclaw/main/docs/assets/sponsors/convex.svg" alt="Convex" height="24">
         </picture>
       </a>
     </td>
@@ -213,7 +213,7 @@ Runbook: [iOS connect](https://docs.openclaw.ai/platforms/ios).
 Prefer `pnpm` for builds from source. Bun is optional for running TypeScript directly.
 
 ```bash
-git clone https://github.com/openclaw/openclaw.git
+git clone https://github.com/tunacosgun/openclaw.git
 cd openclaw
 
 pnpm install
@@ -245,7 +245,7 @@ Details: [Development channels](https://docs.openclaw.ai/install/development-cha
 
 ## Configuration
 
-Minimal `~/.openclaw/openclaw.json` (model + defaults):
+Minimal `~/.tunacosgun/openclaw.json` (model + defaults):
 
 ```json5
 {
@@ -259,12 +259,12 @@ Minimal `~/.openclaw/openclaw.json` (model + defaults):
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=openclaw/openclaw&type=date&legend=top-left)](https://www.star-history.com/#openclaw/openclaw&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=tunacosgun/openclaw&type=date&legend=top-left)](https://www.star-history.com/#tunacosgun/openclaw&type=date&legend=top-left)
 
 ## Molty
 
 OpenClaw was built for **Molty**, a space lobster AI assistant. 🦞
-by Peter Steinberger and the community.
+by Tunahan Coşgun and the community.
 
 - [openclaw.ai](https://openclaw.ai)
 - [soul.md](https://soul.md)

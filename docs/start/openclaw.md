@@ -55,7 +55,7 @@ openclaw channels login
 openclaw gateway --port 18789
 ```
 
-3. Put a minimal config in `~/.openclaw/openclaw.json`:
+3. Put a minimal config in `~/.tunacosgun/openclaw.json`:
 
 ```json5
 {

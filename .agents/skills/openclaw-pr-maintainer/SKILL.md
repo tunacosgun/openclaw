@@ -45,16 +45,16 @@ Use this skill for maintainer-facing GitHub workflow, not for ordinary code chan
 ## Search broadly before deciding
 
 - Prefer targeted keyword search before proposing new work or closing something as duplicate.
-- Use `--repo openclaw/openclaw` with `--match title,body` first.
+- Use `--repo tunacosgun/openclaw` with `--match title,body` first.
 - Add `--match comments` when triaging follow-up discussion.
 - Do not stop at the first 500 results when the task requires a full search.
 
 Examples:
 
 ```bash
-gh search prs --repo openclaw/openclaw --match title,body --limit 50 -- "auto-update"
-gh search issues --repo openclaw/openclaw --match title,body --limit 50 -- "auto-update"
-gh search issues --repo openclaw/openclaw --match title,body --limit 50 \
+gh search prs --repo tunacosgun/openclaw --match title,body --limit 50 -- "auto-update"
+gh search issues --repo tunacosgun/openclaw --match title,body --limit 50 -- "auto-update"
+gh search issues --repo tunacosgun/openclaw --match title,body --limit 50 \
   --json number,title,state,url,updatedAt -- "auto update" \
   --jq '.[] | "\(.number) | \(.state) | \(.title) | \(.url)"'
 ```
