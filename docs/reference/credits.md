@@ -13,7 +13,7 @@ OpenClaw = CLAW + TARDIS, because every space lobster needs a time and space mac
 
 ## Credits
 
-- **Tunahan Coşgun** ([@steipete](https://x.com/steipete)) - Creator, lobster whisperer
+- **Tunahan Coşgun** ([@tunacosgun](https://x.com/tunacosgun)) - Creator, Tunasoft Yazılım
 - **Mario Zechner** ([@badlogicc](https://x.com/badlogicgames)) - Pi creator, security pen tester
 - **Clawd** - The space lobster who demanded a better name
 

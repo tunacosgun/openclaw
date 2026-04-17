@@ -7,12 +7,12 @@ Welcome to the lobster tank! 🦞
 - **GitHub:** https://github.com/tunacosgun/openclaw
 - **Vision:** [`VISION.md`](VISION.md)
 - **Discord:** https://discord.gg/qkhbAGHRBT
-- **X/Twitter:** [@steipete](https://x.com/steipete) / [@openclaw](https://x.com/openclaw)
+- **X/Twitter:** [@tunacosgun](https://x.com/tunacosgun) / [@tunacosgun](https://x.com/openclaw)
 
 ## Maintainers
 
 - **Tunahan Coşgun** - Benevolent Dictator
-  - GitHub: [@steipete](https://github.com/steipete) · X: [@steipete](https://x.com/steipete)
+  - GitHub: [@tunacosgun](https://github.com/tunacosgun) · X: [@tunacosgun](https://x.com/tunacosgun)
 
 - **Shadow** - Discord subsystem, Discord admin, Clawhub, all community moderation
   - GitHub: [@thewilloftheshadow](https://github.com/thewilloftheshadow) · X: [@4shadowed](https://x.com/4shadowed)
@@ -189,7 +189,7 @@ If you're an experienced contributor who wants to help shape OpenClaw's directio
 
 Being a maintainer is a responsibility, not an honorary title. We expect active, consistent involvement — triaging issues, reviewing PRs, and helping move the project forward.
 
-Still interested? Email contributing@openclaw.ai with:
+Still interested? Email contributing@tunacosgun.ai with:
 
 - Links to your PRs on OpenClaw (if you don't have any, start there first)
 - Links to open source projects you maintain or actively contribute to
@@ -213,7 +213,7 @@ We take security reports seriously. Report vulnerabilities directly to the repos
 - **ClawHub** — [openclaw/clawhub](https://github.com/tunacosgun/clawhub)
 - **Trust and threat model** — [openclaw/trust](https://github.com/tunacosgun/trust)
 
-For issues that don't fit a specific repo, or if you're unsure, email **security@openclaw.ai** and we'll route it.
+For issues that don't fit a specific repo, or if you're unsure, email **security@tunacosgun.ai** and we'll route it.
 
 ### Required in Reports
 
