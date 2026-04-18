@@ -13,15 +13,9 @@ OpenClaw = CLAW + TARDIS, because every space lobster needs a time and space mac
 
 ## Credits
 
-- **Tunahan Coşgun** ([@tunacosgun](https://x.com/tunacosgun)) - Creator, Tunasoft Yazılım
-- **Mario Zechner** ([@badlogicc](https://x.com/badlogicgames)) - Pi creator, security pen tester
+- **Tunahan Coşgun** ([@tunacosgun](https://github.com/tunacosgun), <info@tunahancosgun.dev>) - Creator, Tunasoft Yazılım
+- **Duygu Durmuş** (<duygudurmus12@gmail.com>) - Co-owner, Tunasoft Yazılım
 - **Clawd** - The space lobster who demanded a better name
-
-## Core contributors
-
-- **Maxim Vovshin** (@Hyaxia, [36747317+Hyaxia@users.noreply.github.com](mailto:36747317+Hyaxia@users.noreply.github.com)) - Blogwatcher skill
-- **Nacho Iacovino** (@nachoiacovino, [nacho.iacovino@gmail.com](mailto:nacho.iacovino@gmail.com)) - Location parsing (Telegram and WhatsApp)
-- **Vincent Koc** ([@vincentkoc](https://github.com/vincentkoc), [@vincent_koc](https://x.com/vincent_koc)) - Agents, Telemetry, Hooks, Security
 
 ## License
 
